@@ -48,7 +48,6 @@ body {
     height: 400px;
 }
 
-
 .text-black {
     border-radius: 5px;
     border-color: rgb(79, 23, 23);
@@ -80,13 +79,13 @@ body {
 .boton {
     padding: 5px;
     margin-top: 150px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: none;
-    border: 5px;
+    border-radius: 8px;
     transition: 0.5s;
 }
 .boton:hover {
-    background-color: #9d9d9d;
+    background-color: rgb(182, 181, 181);
 }
 
 .anuncio {
@@ -103,6 +102,16 @@ body {
 .foto {
     color: white;
 
+}
+
+/*CONTACTO*/
+
+h4 {
+    color: #fff;
+}
+
+.form-label {
+    color: #fff;
 }
 
 /* PIE */
