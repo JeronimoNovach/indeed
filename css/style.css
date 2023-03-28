@@ -8,40 +8,153 @@ body {
     background-color: rgb(51, 51, 51);
 }
 
-.padre {
-    margin: 50px;
+
+
+
+
+
+
+
+
+
+.padre{
+    justify-content: space-evenly;
     display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
-    gap: 20px;
+    grid-template-areas: "esp-blanca negra"
+                            "blanca esp-negra";
 }
-.grid-item-1 {
-    min-height: 50vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
+
+.padre p{
+    font-size: 14px;
 }
-.grid-item-1 button {
-    border-radius: 5px;
-    border-color: rgb(79, 23, 23);
-    align-items: end;
+
+.padre button{
+    width: 100px;
 }
-.apolo-blanca {
-    background-image: url(../multimedia/APOLO\ BLANCA\ ESPALDA.jpg);
+
+.padre img{
+    width: 100%;
 }
-.apolo-negra {
-    background-image: url(../multimedia/APOLO\ FRENTE\ NEGRA.jpg);
+
+.apolo{
+    width: 500px;
+    margin: 25px;
 }
-.apolo-frewhite {
-    background-image: url(../multimedia/APOLO\ BLANCA.jpg);
+
+.apolo-blanca{
+    grid-area: "esp-blanca";
 }
-.apolo-espblack {
-    background-image: url(../multimedia/APOLO\ NEGRA.jpg);
+
+.apolo-negra{
+    grid-area: "negra";
 }
+
+.apolo-frewhite{
+    grid-area: "blanca";
+}
+
+.apolo-espblack{
+    grid-area: "esp-negra";
+}
+
+@media screen and  (max-width: 1000px) {
+    .apolo{
+        width: 400px;
+    }
+    .padre img{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width: 850px) {
+    .apolo{
+        width: 300px;
+    }
+    .padre img{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width: 630px) {
+    .padre{
+        grid-template-areas: "esp-blanca"
+                                "negra"
+                                "blanca"
+                                "esp-negra";
+    }
+    .padre img{
+        width: 300px;
+    }
+    .productos-foto .anuncio .productos{
+        font-size: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logo {
     background-image: url(../multimedia/FONDO\ HEADER.png);
     width: 100%; 
@@ -64,10 +177,10 @@ body {
 }
 
 .productos {
+    font-size: 100px;
     color: white;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-size: 100px;
     background-color: rgb(104, 63, 63);
     border-radius: 10px;
 }
@@ -77,8 +190,8 @@ body {
 }
 
 .boton {
-    padding: 5px;
     margin-top: 150px;
+    padding: 5px;
     background-color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -93,6 +206,8 @@ body {
     width: 100%; 
     height: 450px;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .proximamente {
     color: white;
