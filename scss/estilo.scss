@@ -1,8 +1,23 @@
 @import"./partials/reset";
-
 @import"./partials/variables";
 @import"./partials/body";
+@import"./partials/nav"
 
+
+.logo {
+    background-image: url(../multimedia/FONDO\ HEADER.png);
+    width: 100%; 
+    height: 400px;
+}
+
+.text-black {
+    border-radius: 5px;
+    border-color: rgb(79, 23, 23);
+}
+.carrito {
+    width: 30px;
+    height: 30px;
+}
 .padre{
     justify-content: space-evenly;
     display: grid;
@@ -16,6 +31,38 @@
     }
     img{
         width: 100%;
+    }
+}
+@media screen and  (max-width: 1000px) {
+    .apolo{
+        width: 400px;
+    }
+    .padre img{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width: 850px) {
+    .apolo{
+        width: 300px;
+    }
+    .padre img{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width: 630px) {
+    .padre{
+        grid-template-areas: "esp-blanca"
+                                "negra"
+                                "blanca"
+                                "esp-negra";
+    }
+    .padre img{
+        width: 300px;
+    }
+    .productos-foto .anuncio .productos{
+        font-size: 60px;
     }
 }
 

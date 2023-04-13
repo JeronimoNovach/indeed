@@ -11,6 +11,13 @@ body {
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.button {
+  height: 100px;
+  width: 200px;
+  padding: 50px;
+  margin: 100px;
+}
+
 .padre {
   justify-content: space-evenly;
   display: grid;
@@ -104,8 +111,31 @@ body {
   border-radius: 10px;
 }
 
+.disponible {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.talles{
+  color: #000000;
+  height: 30px;
+  margin-top: 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.talles:hover {
+  background-color: #9d9c9c;
+}
+
+.imagen {
+  border-radius: 100px;
+}
+
 .precio {
   align-items: end;
+  margin: 20px;
+  padding: -10px;
 }
 
 .boton {
@@ -137,7 +167,7 @@ body {
 }
 
 .foto {
-  color: white;
+  color: white; 
 }
 
 /*CONTACTO*/
@@ -157,6 +187,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .ico {
@@ -170,7 +201,7 @@ h4 {
 
 .pie-negro {
   color: #fff;
-  font-size: 10px;
+  font-size: 20px;
   padding-top: 5px;
 }
 
