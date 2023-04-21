@@ -205,6 +205,14 @@ h4 {
   padding-top: 5px;
 }
 
+
+/*CARRITO*/
+
+.comprar {
+  position: relative;
+  left: 500px;
+}
+
 /**/
 .wpp {
   position: fixed;
