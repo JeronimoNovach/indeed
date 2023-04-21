@@ -179,6 +179,9 @@ h4 {
   color: #fff;
 }
 
+/*INFORMACION*/
+
+
 /* PIE */
 .footer {
   height: 65px;
@@ -211,6 +214,9 @@ h4 {
 .comprar {
   position: relative;
   left: 500px;
+}
+.c {
+  margin-bottom: 100px;
 }
 
 /**/
