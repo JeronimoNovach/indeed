@@ -1,1 +1,1 @@
-alert("Estas comprando ropa fachera ;)")
+alert("Estas comprando ropa fachera ;)") //Alerta q aparece cuando cargan pagina
